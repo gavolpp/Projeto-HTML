@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Receita de Pastel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+
+  <style>
+    .body {
+      margin: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      background-color: #FEFAE0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    /* se der tempo colocar mecanica de scroll */
+    .header {
+      display: flex;
+      position: sticky;
+      flex-flow: row nowrap;
+      border-bottom: 1px black solid;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: flex-start;
+      margin: auto;
+      top: 0;
+      gap: 20px;
+      padding-left: 10px;
+      background-color: #CCD5AE;
+      width: 100%;
+    }
+
+    .header p {
+      padding-right: 100px;
+    }
+
+    main{
+      display: flex;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 45%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .table2{
+      align-self: center;
+      width: 300px;
+    }
+
+    .footer {
+      width: 100%;
+      display: flex;
+      /* position: sticky; */
+      flex-flow: row wrap;
+      border-top: 1px black solid;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: flex-start;
+      margin: auto;
+      top: 0;
+      gap: 20px;
+      padding-left: 10px;
+      background-color: #CCD5AE;
+    }
+
+    .sobre {
+      flex-flow: column nowrap;
+    }
+    .margem {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 100px;
+      top: 0;
+      gap: 20px;
+    }
+  </style>
+
+  <body class="body">
+    <header class="header">
+      <p>RECEITAS DA VOVÓ</p>
+      <a href="index.html">Menu</a>
+      <a href="cadastro.html">Cadastro</a>
+    </header>
+
+    <main>
+      <div class="margem">
+        <h1>
+          <b>Pastel de forno</b>
+        </h1>
+        <p>
+          <video
+            controls
+            muted
+            src="videos/pastel.mp4"
+            type="video/mp4"
+            width="700"
+          ></video>
+        </p>
+        <table>
+          <tr>
+            <th>
+              <h2>Ingredientes(20 Porções)</h2>
+            </th>
+          </tr>
+          <tr>
+            <td>3 xícaras (chá) de farinha de trigo</td>
+            <td>150g de margarina</td>
+          </tr>
+          <tr>
+            <td>1 ovo</td>
+            <td>1 colher (chá) de sal</td>
+          </tr>
+
+          <tr>
+            <td>1 colher (sopa) de vinagre</td>
+            <td>1 gema para pincelar</td>
+          </tr>
+          <tr>
+            <td>1 xícara de água morna</td>
+            <td>recheio de sua preferencia</td>
+          </tr>
+        </table>
+            <h2>Utensílios</h2>
+        <table class="table2">
+          <tr>
+            <td>Plástico filme</td>
+            <td>Bowl</td>
+          </tr>
+          <tr>
+            <td>Pincel de Silicone</td>
+            <td>Forma</td>
+          </tr>
+          <tr>
+            <td>Rolo de massa</td>
+          </tr>
+        </table>
+        <div>
+          <h2>Modo de preparo</h2>
+          <i>Tempo de preparo : 40min</i>
+        </div>
+        <div>
+          <b>1.</b>
+          Em uma vasilha, misture a farinha, a margarina, o ovo, o sal e o
+          vinagre.
+        </div>
+        <div>
+          <b>2.</b>
+          Amasse bem até a massa obter uma massa homogênea.
+        </div>
+        <div>
+          <b>3.</b>
+          Envolva a massa em papel filme ou saco plástico e leve à geladeira por
+          30 minutos.
+        </div>
+        <div>
+          <b>4.</b>
+          Abra a massa com o rolo em uma superfície plana e enfarinhada, corte-a
+          em 20 pedaços, distribua o recheio , feche os pastéis e pincele com a
+          gema.
+        </div>
+        <div>
+          <b>5.</b>
+          Asse em forno médio (180° C), preaquecido, por 40 minutos.
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="sobre">
+        <h4>Sobre nós</h4>
+        <p>
+          Integrantes:
+          <br />
+          Daniela Ribeiro
+          <br />
+          Gabriel Volpato
+          <br />
+          Maria Felix
+          <br />
+          Mariana Nascimento
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

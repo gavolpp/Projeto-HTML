@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Website</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+      </head>
+
+    <!-- paleta de cores - receitas da vovó: https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373 -->
+   <style>
+    .body{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        background-color: #FEFAE0;
+    }
+
+    /* se der tempo colocar mecanica de scroll */
+    .header{
+        width: 100%;
+        display: flex;
+        position: sticky;
+        flex-flow: row nowrap;
+        border-bottom: 1px black solid;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: flex-start;
+        margin: auto;
+        top: 0;
+        gap: 20px;
+        padding-left: 10px;
+        background-color: #CCD5AE;
+    }
+
+    .header p{
+        padding-right: 100px;
+    }
+
+    main{
+      display: flex;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 60%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .blabla{
+        margin: 10px 100px 0px 100px;
+    }
+
+    .receitas{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .receitas_tab{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 70px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .receitas_row{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+    }
+
+    .receita{
+        display: flex;
+        flex-flow: column nowrap;
+        margin:0px 40px 0px 40px ;
+    }
+
+    .receita img{
+        width: 250px;
+    }
+
+    .receita p{
+        text-align: center;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        /* position: sticky; */
+        flex-flow: row wrap;
+        border-top: 1px black solid;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: flex-start;
+        margin: auto;
+        top: 0;
+        gap: 20px;
+        padding-left: 10px;
+        background-color: #CCD5AE;
+    }
+
+    .sobre{
+        flex-flow: column nowrap;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+   </style>
+  <body class="body">
+    <header class="header">
+        <p>RECEITAS DA VOVÓ</p>
+        <a href="index.html">Menu</a>  
+        <a href="cadastro.html">Cadastro</a>
+    </header>
+
+    <main class="main">  
+        
+    <div class="blabla">
+        <h1>
+            Receitas legais e gostosas  
+        </h1>
+        <p style="width: 600px;">Aqui você encontra receitas de uma vovó apaixonada por cozinhar. Desde 1965 proporcionando receitas únicas que trazem aquele gostinho de infância, prezamos por receitas tradicionais e aconchegantes, além da simplicidade e facilidade. </p>
+        <br>
+    </div>
+   
+    <hr>  
+    <div class="receitas">
+        
+    <br>
+    <h1>RECEITAS:</h1>
+    <br>
+    <div class="receitas_tab">
+        <div class="receitas_row">
+            <div class="receita">
+                <a href="/HTML Receitas/bolo.html">
+                <img src="/HTML Receitas/imagens/birthday-cake.jpg" alt="bolo de chocolate">
+                <p>Bolo de chocolate</p>
+                </a>
+            </div>
+            <div class="receita">
+                <a href="/HTML Receitas/pastel.html">
+                    <img src="/HTML Receitas/imagens/pastel.jpeg" alt="pastel de forno">
+                    <p>Pastel de forno</p>
+                    </a>
+            </div>
+            </div>
+        <div class="receitas_row">
+            <div class="receita">
+                <a href="/HTML Receitas/cuca.html">
+                    <img src="/HTML Receitas/imagens/cuca.png" alt="cuca de banana">
+                    <p>Cuca de banana</p>
+                </a>
+            </div>
+            <div class="receita">
+                <a href="/HTML Receitas/arroz.html">
+                    <img src="/HTML Receitas/imagens/arroz.png" alt="arroz de forno">
+                    <p>Arroz de forno</p>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+    </main>
+
+    <footer class="footer">
+        <div class="sobre">
+            <h4>
+                Sobre nós
+            </h4>
+            <p>
+                Integrantes:
+                <br>
+                Daniela Ribeiro
+                <br>
+                Gabriel Volpato
+                <br>
+                Maria Felix
+                <br>
+                Mariana Nascimento
+            </p>
+        </div>  
+    </footer>
+  </body>
+</html>

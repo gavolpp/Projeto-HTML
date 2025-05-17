@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!-- paleta de cores - receitas da vovó: https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373 -->
+  <style>
+    body {
+      background-color: #FEFAE0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-content: center;
+      align-items: center;
+    }
+
+    .main {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      height: 100vh;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    main.h1 {
+      text-align: center;
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    main.p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #deb887;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #deb887;
+    }
+  </style>
+
+  <style>
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #ffdead;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #deb887;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    /* se der tempo colocar mecanica de scroll */
+    .header {
+      display: flex;
+      position: sticky;
+      flex-flow: row nowrap;
+      border-bottom: 1px black solid;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: flex-start;
+      margin: auto;
+      top: 0;
+      gap: 20px;
+      padding-left: 10px;
+      background-color: #CCD5AE;
+      width: 100%;
+    }
+
+    .header p {
+      padding-right: 100px;
+    }
+
+    .footer {
+      display: flex;
+      /* position: sticky; */
+      flex-flow: row wrap;
+      border-top: 1px black solid;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: flex-start;
+      margin: auto;
+      top: 0;
+      gap: 20px;
+      padding-left: 10px;
+      background-color: #CCD5AE;
+      width: 100%;
+    }
+
+    .sobre {
+      flex-flow: column nowrap;
+    }
+  </style>
+  <body class="body">
+    <header class="header">
+      <p>RECEITAS DA VOVÓ</p>
+      <a href="index.html">Menu</a>
+      <a href="cadastro.html">Cadastro</a>
+    </header>
+
+    <main class="main" style="text-align: center">
+      <form accept-charset="UTF-8" action="" method="post">
+        <h1><b>Cadastro:</b></h1>
+        <br />
+        <p>Nome de usuário:</p>
+        <input
+          type="text"
+          name="nomeUsuario"
+          placeholder="nome de usuario"
+          size="20"
+          minlength="8"
+          maxlength="50"
+          required
+          spellcheck="true"
+        /><br />
+        <p>Nome completo:</p>
+        <input
+          type="text"
+          name="nome"
+          placeholder="nome"
+          size="20"
+          minlength="5"
+          maxlength="50"
+          required
+          spellcheck="true"
+        /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" placeholder="email" /><br /><br />
+        <p>Telefone:</p>
+        <input
+          type="tel"
+          name="telefone"
+          placeholder="(XX)XXXXX-XXXX"
+        /><br /><br />
+        <p>Senha:</p>
+        <input
+          type="password"
+          name="senha"
+          placeholder="senha"
+          size="20"
+        /><br /><br /><br /><br />
+        <p><i>Aceita receber notificações via email?</i></p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span> </label
+        ><br /><br /><br /><br />
+        <button type="button" onclick="alert('Usuario cadastrado')">
+          <b>Enviar</b>
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="sobre">
+        <h4>Sobre nós</h4>
+        <p>
+          Integrantes:
+          <br />
+          Daniela Ribeiro
+          <br />
+          Gabriel Volpato
+          <br />
+          Maria Felix
+          <br />
+          Mariana Nascimento
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
